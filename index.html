@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27%3E%3Crect width=%2716%27 height=%2716%27 rx=%273%27 fill=%27%23234%27/%3E%3Crect x=%273%27 y=%273%27 width=%2710%27 height=%277%27 fill=%27%23cde%27/%3E%3C/svg%3E" />
+  <title>IC-M330GE Funkgeräte-Emulator</title>
+  <meta name="description" content="Emulator des Icom IC-M330GE UKW-Seefunkgeräts zur Vorbereitung auf die praktische SRC-Funkprüfung" />
+</head>
+<body>
+  <header class="top">
+    <h1>Icom IC-M330GE <span>Funkgeräte-Emulator für die praktische SRC-Prüfung</span></h1>
+  </header>
+  <main class="layout">
+    <section class="device" aria-label="Funkgerät">
+      <div id="radio" class="radio"></div>
+      <div class="hintline">Tasten mit der Maus bedienen. <b>Halten</b>: DIAL 1&nbsp;s = Ein/Aus · 16/C 1&nbsp;s = Rufkanal · DISTRESS 3&nbsp;s (Kappe zuerst anheben) · PTT = Senden. Tastatur-Belegung siehe rechts.</div>
+      <div id="mic" class="mic-wrap"></div>
+    </section>
+    <aside class="side">
+      <section id="exam" class="card"></section>
+      <details class="card" id="sim" open></details>
+      <details class="card" id="help"></details>
+    </aside>
+  </main>
+  <dialog id="report"></dialog>
+  <footer class="foot">Inoffizielles Übungswerkzeug nach dem Basis-Handbuch des Herstellers (deutsche Fassung). Nicht für den Echtbetrieb. Alle MMSI/Stationen sind fiktiv.</footer>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
